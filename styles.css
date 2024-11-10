@@ -1,0 +1,155 @@
+
+* {
+  margin:0;
+  padding:0;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #3C5B6F;
+  font-family:sans-serif;
+  color:#DFD0B8;
+}
+
+nav {
+  width:100%;
+  display:flex;
+  background-color:#153448;
+  justify-content:center;
+  position:fixed;
+  color: white
+}
+
+nav > ul {
+  display:flex;
+  flex-wrap:wrap;
+}
+
+ul {
+  list-style:none;
+}
+
+nav > ul >li:hover {
+  background-color: red;
+  color: black;
+  cursor: pointer;
+}
+
+li > a {
+  text-decoration:none;
+  color:inherit;
+  display:block;
+  font-size:20px;
+  padding:12px
+}
+
+.welcome-section {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  height:90vh;
+  flex-direction:column;
+  text-align:center;
+}
+
+h1 {
+  color:#dfa04f;
+  font-size:50px;
+}
+
+.personal-description {
+  margin-top:10px;
+}
+
+.projects{
+  padding-top:10vh;
+}
+
+.project-title {
+  text-align:center;
+  margin: 30px auto;
+}
+
+h2, h3 {
+  color:#dfa04f;
+  font-size:32px
+}
+
+.projects-link {
+  display:grid;
+  width:100%;
+  margin:0 auto;
+  grid-gap:20px;
+  grid-template-columns: 460px 460px;
+  max-width:940px
+
+}
+@media only screen and (max-width: 940px) {
+  .projects-link {
+    display:grid;
+    width:100%;
+    margin:0 auto;
+    grid-gap:2rem;
+    max-width:460px;
+    grid-template-columns: 460px; 
+  }
+}
+
+.project-preview {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  max-width:460px;
+  max-height:300px;
+}
+
+.project-tile {
+    text-decoration:none;
+}
+
+.project-description {
+  text-align:center;
+  Background-color:948979;
+  font-size:22px;
+  color:white;
+}
+
+.project-description:hover {
+  color:red;
+}
+
+.socials {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  margin-top:30vh;
+
+}
+
+.social-div {
+  text-align:center;
+    margin-bottom:30vh;
+    margin-top:10px;
+}
+
+.social-link {
+  display:inline-block;
+  text-decoration:none;
+  padding:4px;
+  color:white;
+
+}
+
+.social-link:hover{
+  color:red;
+}
